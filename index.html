@@ -523,29 +523,20 @@
     margin-bottom: 4px;
   }
   .sponsor-lockup {
-    display: inline-flex; align-items: center; gap: 12px;
-    padding: 8px 18px 8px 18px;
-    background: #FFFFFF;
-    border: 1px solid var(--rule);
-    border-radius: var(--r-pill);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 0;
+    background: transparent;
+    border: none;
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 12px; font-weight: 500;
     letter-spacing: 0.04em;
     color: var(--ink-mute);
-    transition: border-color 0.22s ease, transform 0.25s cubic-bezier(.2,.7,.2,1);
-  }
-  .session:hover .sponsor-lockup {
-    border-color: var(--accent);
-    transform: translateY(-1px);
   }
   .sponsor-lockup .sp-label {
     font-style: italic;
     color: var(--ink-mute);
   }
-  .sponsor-lockup .sp-divider {
-    width: 1px; height: 12px;
-    background: var(--rule);
-  }
+  .sponsor-lockup .sp-divider { display: none; }
   .sponsor-mark {
     display: inline-flex; align-items: center;
     height: 18px; line-height: 1;
@@ -929,10 +920,10 @@ window.AGENDA_DAYS = [
 ];
 
 window.SPONSORS = {
-  jiostar:    { name: "JioStar",    src: "https://splendid-clafoutis-5c8a41.netlify.app/assets/logos/jiostar.png" },
+  jiostar:    { name: "JioStar",    src: "assets/logos/jiostar.png" },
   jio:        { name: "Jio",        src: null },
   google:     { name: "Google",     src: null },
-  netflix:    { name: "Netflix",    src: null },
+  netflix:    { name: "Netflix",    src: "Netflix_Logo_PMS.png" },
   telkomsel:  { name: "Telkomsel",  src: null },
   aws:        { name: "AWS",        src: null },
   irdeto:     { name: "Irdeto",     src: null }
@@ -944,7 +935,7 @@ window.AGENDA = {
       { time: "09:00 – 13:00", title: "AVIA Policy Roundtable", titleUrl: "https://avia.org/all_events/policy-roundtable-apos/", type: "presentation", note: "For AVIA Members Only · Reach out to events@avia.org to attend", speakers: [] },
       { time: "14:00 – 17:00", title: "AVIA State of Piracy Roundtable", titleUrl: "https://avia.org/all_events/piracy-roundtable-apos/", type: "presentation", note: "Reach out to events@avia.org to attend", speakers: [] },
       { time: "15:00 – 17:30", title: "APOS CEO Forum", type: "ceo-forum", note: "By invitation only", speakers: [] },
-      { time: "18:00 onwards", title: "Welcome Reception", type: "networking", speakers: [] }
+      { time: "18:00 onwards", title: "Welcome Reception", type: "networking", speakers: [], sponsor: { label: "Hosted by", id: "netflix" } }
     ]
   },
   day1: {
@@ -1011,7 +1002,7 @@ window.AGENDA = {
       { time: "17:50 – 18:10", title: "Breaking the Language Barrier: AI-Native Video for a Global Audience", type: "fireside", speakers: [{ name: "Guy Piekarz", role: "CEO", company: "Panjaya", url: "https://aposlive.com/speaker/guy-piekarz" }] },
       { time: "18:10 – 18:30", title: "Prompt to Picture: Inside the Rise of AI Video", type: "fireside", speakers: [{ name: "Melody Hou", role: "Head of Global Partnerships", company: "Kling AI", url: "https://aposlive.com/speaker/melody-hou" }] },
       { time: "18:30", title: "Day 2 Closing Remarks", type: "keynote", note: "Closing", speakers: [{ name: "Vivek Couto", role: "CEO & Executive Director", company: "Media Partners Asia", url: "https://aposlive.com/speaker/vivek-couto" }] },
-      { time: "18:35 onwards", title: "APOS Closing Reception & Dinner", type: "networking" }
+      { time: "18:35 onwards", title: "APOS Closing Reception & Dinner", type: "networking", sponsor: { label: "Hosted by", id: "jiostar" } }
     ],
     evening: []
   }
