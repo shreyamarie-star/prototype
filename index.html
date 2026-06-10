@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!-- v2026-06-10k -->
+<!-- v2026-06-10m -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -933,7 +933,7 @@ window.AGENDA = {
   day0: {
     sessions: [
       { time: "09:00 – 13:00", title: "AVIA Policy Roundtable", titleUrl: "https://avia.org/all_events/policy-roundtable-apos/", type: "presentation", note: "For AVIA Members Only · Reach out to events@avia.org to attend", speakers: [] },
-      { time: "14:00 – 17:00", title: "AVIA State of Piracy Roundtable", titleUrl: "https://avia.org/all_events/piracy-roundtable-apos/", type: "presentation", note: "Reach out to events@avia.org to attend", speakers: [] },
+      { time: "14:00 – 17:00", title: "AVIA State of Piracy Roundtable", titleUrl: "https://avia.org/all_events/piracy-roundtable-apos/", type: "presentation", note: "To register,", noteLink: { text: "click here", url: "https://form.jotform.com/260898809960476/prefill/6a2903806230624cad4e371c1023" }, speakers: [] },
       { time: "15:00 – 17:30", title: "APOS CEO Forum", type: "ceo-forum", note: "By invitation only", speakers: [] },
       { time: "18:00 onwards", title: "Welcome Reception", type: "networking", speakers: [], sponsor: { label: "Hosted by", id: "netflix" } }
     ]
@@ -1123,7 +1123,7 @@ function SessionRow({ s, sponsorStyle }) {
             </a>
           ) : s.title}
         </div>
-        {!isNetworking && <div className="session-note">{s.note || TYPE_LABELS[s.type]}</div>}
+        {!isNetworking && <div className="session-note">{s.note || TYPE_LABELS[s.type]}{s.noteLink && <> <a href={s.noteLink.url} target="_blank" rel="noopener noreferrer">{s.noteLink.text}</a></>}</div>}
         {s.sponsor && <div className="sponsor-row"><SponsorLockup sponsor={s.sponsor} style={sponsorStyle} /></div>}
         {s.speakers && s.speakers.length > 0 && (
           <div className="speakers">
