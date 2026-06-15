@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<!-- v2026-06-11j -->
+<!-- v2026-06-11l -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="build" content="2026-06-11j">
+<meta name="build" content="2026-06-11k">
 <title>APOS 2026 — Agenda</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -561,8 +561,8 @@
   .loc-tag {
     display: inline-flex; align-items: center; gap: 6px;
     font-family: 'Be Vietnam', system-ui, sans-serif;
-    font-size: 11px; color: var(--ink-mute);
-    letter-spacing: 0.04em;
+    font-size: 13px; color: var(--ink-mute);
+    letter-spacing: 0.03em;
   }
   .loc-tag svg { opacity: 0.6; }
 
@@ -598,9 +598,19 @@
 
   .session.is-networking .session-title {
     font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 1rem; font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--ink-soft);
+  }
+  .day-location-banner {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 0.85rem;
+    color: var(--ink-mute);
+    padding: 12px 0 18px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 4px;
   }
   .session.is-networking {
     opacity: 0.85;
@@ -916,8 +926,8 @@ window.AGENDA_META = {
 
 window.AGENDA_DAYS = [
   { id: "day0", label: "Day 0", date: "June 16", weekday: "Tuesday" },
-  { id: "day1", label: "Day 1", date: "June 17", weekday: "Wednesday" },
-  { id: "day2", label: "Day 2", date: "June 18", weekday: "Thursday" }
+  { id: "day1", label: "Day 1", date: "June 17", weekday: "Wednesday", location: "The Grand Ballroom, Level 7, Mulia Conference Centre" },
+  { id: "day2", label: "Day 2", date: "June 18", weekday: "Thursday", location: "The Grand Ballroom, Level 7, Mulia Conference Centre" }
 ];
 
 window.SPONSORS = {
@@ -933,10 +943,10 @@ window.SPONSORS = {
 window.AGENDA = {
   day0: {
     sessions: [
-      { time: "09:00 – 13:00", title: "AVIA Policy Roundtable", titleUrl: "https://avia.org/all_events/policy-roundtable-apos/", type: "presentation", note: "For AVIA Members Only · Reach out to events@avia.org to attend", speakers: [] },
-      { time: "14:00 – 17:00", title: "AVIA State of Piracy Roundtable", titleUrl: "https://avia.org/all_events/piracy-roundtable-apos/", type: "presentation", note: "To register,", noteLink: { text: "click here", url: "https://form.jotform.com/260898809960476/prefill/6a2903806230624cad4e371c1023" }, speakers: [] },
-      { time: "15:00 – 17:30", title: "APOS CEO Forum", type: "ceo-forum", note: "By invitation only", speakers: [] },
-      { time: "18:00 onwards", title: "Welcome Reception", type: "networking", speakers: [], sponsor: { label: "Hosted by", id: "netflix" } }
+      { time: "09:00 – 13:00", title: "AVIA Policy Roundtable", titleUrl: "https://avia.org/all_events/policy-roundtable-apos/", type: "presentation", note: "For AVIA Members Only · Reach out to events@avia.org to attend", speakers: [], location: "Eternity Chapel" },
+      { time: "14:00 – 17:00", title: "AVIA State of Piracy Roundtable", titleUrl: "https://avia.org/all_events/piracy-roundtable-apos/", type: "presentation", note: "To register,", noteLink: { text: "click here", url: "https://form.jotform.com/260898809960476/prefill/6a2903806230624cad4e371c1023" }, speakers: [], location: "Eternity Chapel" },
+      { time: "15:00 – 17:30", title: "APOS CEO Forum", type: "ceo-forum", note: "By invitation only", speakers: [], location: "Violet Ballroom 2, Level 5, Mulia Conference Centre" },
+      { time: "18:00 onwards", title: "Welcome Reception", type: "networking", speakers: [], sponsor: { label: "Hosted by", id: "netflix" }, location: "ZJ's Bar & Lounge, Level 5, Mulia Resort" }
     ]
   },
   day1: {
@@ -957,7 +967,7 @@ window.AGENDA = {
     ],
     afternoon: [
       { time: "12:30 – 12:50", title: "AI, Chinese Stories, Microdramas & The New Asia Map", type: "fireside", speakers: [{ name: "Yang Xianghua", role: "President, iQIYI International", company: "iQIYI", url: "https://aposlive.com/speaker/yang-xianghua" }] },
-      { time: "12:50 – 14:00", title: "Lunch", type: "networking" },
+      { time: "12:50 – 14:00", title: "Lunch", type: "networking", location: "The Café, Level 5, Mulia Resort" },
       { time: "14:00 – 14:20", title: "Creators, Commerce, CTV: Inside India's Video Boom", type: "fireside", speakers: [{ name: "Gunjan Soni", role: "Country MD", company: "YouTube India", url: "https://aposlive.com/speaker/gunjan-soni" }] },
       { time: "14:20 – 14:50", title: "The New Creative Pipeline: AI, IP & Human Craft", type: "panel", speakers: [{ name: "Andy Serkis", role: "Actor / Director / Producer", company: "", url: "https://aposlive.com/speaker/andy-serkis" }, { name: "Jon Zepp", role: "Vice President, Entertainment Content & Platforms", company: "Google", url: "https://aposlive.com/speaker/jon-zepp" }, { name: "Josh Nelson Youssef", role: "Director / Writer", company: "", url: "https://aposlive.com/speaker/josh-nelson-youssef" }] },
       { time: "14:50 – 15:20", title: "Local Champions, Global Studios: The New Partnership Playbook", type: "panel", speakers: [{ name: "Howard Rees", role: "Chief Strategy Officer, Streaming & Broadcast", company: "Nine", url: "https://aposlive.com/speaker/howard-rees" }, { name: "Chris Taylor", role: "Managing Director, APAC, TV Distribution and International Networks & DTC", company: "NBCUniversal", url: "https://aposlive.com/speaker/chris-taylor" }, { name: "Adam Herr", role: "SVP of Distribution, APAC", company: "Sony Pictures Entertainment", url: "https://aposlive.com/speaker/adam-herr" }, { name: "Mark Francis", role: "Chief Content Officer", company: "Vidio", url: "https://aposlive.com/speaker/mark-francis" }] },
@@ -968,7 +978,7 @@ window.AGENDA = {
       { time: "17:10 – 17:40", title: "Capital in the Age of AI: Where Investors Are Betting Across Sports, Streaming and Stories", type: "panel", speakers: [{ name: "Gautam Saxena", role: "Head of Corporate Finance", company: "ING", url: "https://aposlive.com/speaker/gautam-saxena" }, { name: "Nikhil Bahel", role: "Managing Director", company: "Elysian Park Ventures", url: "https://aposlive.com/speaker/nikhil-bahel" }, { name: "Swapnil Chichani", role: "Vice President", company: "Asia Partners", url: "https://aposlive.com/speaker/swapnil-chichani" }, { name: "David Do", role: "Managing Director", company: "VI Group", url: "https://aposlive.com/speaker/david-do" }] },
       { time: "17:40 – 18:10", title: "The AI-Era Streaming Playbook: Winning Attention, Keeping Subscribers", type: "panel", speakers: [{ name: "Sahil Dhar Hakim", role: "Chief Business Officer", company: "Evergent", url: "https://aposlive.com/speaker/sahil-dhar-hakim" }, { name: "Ajit K. Thakur", role: "Co-Founder & Director", company: "aha", url: "https://aposlive.com/speaker/ajit-k.-thakur" }, { name: "Paul Pastor", role: "Co-Founder & Chief Business Officer", company: "Quickplay", url: "https://aposlive.com/speaker/paul-pastor" }] },
       { time: "18:10", title: "Day 1 Closing Remarks", type: "keynote", note: "Closing", speakers: [{ name: "Vivek Couto", role: "CEO & Executive Director", company: "Media Partners Asia", url: "https://aposlive.com/speaker/vivek-couto" }] },
-      { time: "18:10 onwards", title: "Day 1 Reception", type: "networking" }
+      { time: "18:10 onwards", title: "Day 1 Reception", type: "networking", location: "The Bar, Level 5, Mulia Resort" }
     ],
     evening: []
   },
@@ -990,7 +1000,7 @@ window.AGENDA = {
       { time: "12:45 – 13:00", title: "Formats Beyond Borders", type: "fireside", speakers: [{ name: "Deepak Dhar", role: "Founder & Group CEO", company: "Banijay Asia · Endemol Shine India · Creasia Studio", url: "https://aposlive.com/speaker/deepak-dhar" }] }
     ],
     afternoon: [
-      { time: "13:00 – 14:00", title: "Lunch", type: "networking" },
+      { time: "13:00 – 14:00", title: "Lunch", type: "networking", location: "The Café, Level 5, Mulia Resort" },
       { time: "14:00 – 14:25", title: "The Fight For Value: A Global Frontline On Piracy", type: "panel", note: "Presentation & Panel", speakers: [{ name: "Larissa Knapp", role: "EVP & Chief Content Protection Officer", company: "Motion Picture Association", url: "https://aposlive.com/speaker/larissa-knapp" }, { name: "Guillermo Rodriguez", role: "Director, Live Content Protection", company: "Motion Picture Association", url: "https://aposlive.com/speaker/guillermo-rodriguez" }, { name: "Mike Kerr", role: "Managing Director Asia Pacific", company: "beIN", url: "https://aposlive.com/speaker/mike-kerr" }, { name: "Diego Dabrio", role: "Senior Content Protection Expert", company: "UEFA", url: "https://aposlive.com/speaker/diego-dabrio" }] },
       { time: "14:25 – 14:45", title: "Unlocking Jakarta: City of Cinema — New Incentives for Filmmakers and Creators", type: "fireside", speakers: [{ name: "H. Rano Karno, S.IP", company: "Vice Governor of Jakarta", url: "https://aposlive.com/speaker/h.-rano-karno-s.ip" }] },
       { time: "14:45 – 15:05", title: "Asia Streaming Content Insights", type: "presentation", speakers: [{ name: "Dhivya T", role: "Head of Insights", company: "ampd & Media Partners Asia", url: "https://aposlive.com/speaker/dhivya-t" }] },
@@ -1005,7 +1015,7 @@ window.AGENDA = {
       { time: "17:50 – 18:10", title: "Breaking the Language Barrier: AI-Native Video for a Global Audience", type: "fireside", speakers: [{ name: "Guy Piekarz", role: "CEO", company: "Panjaya", url: "https://aposlive.com/speaker/guy-piekarz" }] },
       { time: "18:10 – 18:30", title: "Prompt to Picture: Inside the Rise of AI Video", type: "fireside", speakers: [{ name: "Melody Hou", role: "Head of Global Partnerships", company: "Kling AI", url: "https://aposlive.com/speaker/melody-hou" }] },
       { time: "18:30", title: "Day 2 Closing Remarks", type: "keynote", note: "Closing", speakers: [{ name: "Vivek Couto", role: "CEO & Executive Director", company: "Media Partners Asia", url: "https://aposlive.com/speaker/vivek-couto" }] },
-      { time: "18:35 onwards", title: "APOS Closing Reception & Dinner", type: "networking", sponsor: { label: "Hosted by", id: "jiostar" } }
+      { time: "18:35 onwards", title: "APOS Closing Reception & Dinner", type: "networking", sponsor: { label: "Hosted by", id: "jiostar" }, location: "The Grand Ballroom Foyer, Mulia Conference Centre" }
     ],
     evening: []
   }
@@ -1221,6 +1231,7 @@ function App() {
   const q = query.trim().toLowerCase();
 
   const sessionsToShow = useMemo(() => flattenDay(activeDay), [activeDay]);
+  const dayObj = AGENDA_DAYS.find(d => d.id === activeDay);
 
   const searchResults = useMemo(() => {
     if (!q) return null;
@@ -1291,10 +1302,19 @@ function App() {
           )
         ) : (
           <div className="session-list visible" key={activeDay}>
+            {dayObj && dayObj.location && (
+              <div className="day-location-banner">
+                <PinIcon />
+                All APOS sessions take place in {dayObj.location}
+              </div>
+            )}
             {sessionsToShow.length === 0 && <div className="empty">No sessions for this day.</div>}
-            {sessionsToShow.map((s, i) => (
-              <SessionRow key={i} s={s} sponsorStyle={tweaks.sponsorStyle} />
-            ))}
+            {sessionsToShow.map((s, i) => {
+              const sWithLoc = (dayObj && dayObj.location && !s.location && s.type !== 'networking')
+                ? { ...s, location: dayObj.location }
+                : s;
+              return <SessionRow key={i} s={sWithLoc} sponsorStyle={tweaks.sponsorStyle} />;
+            })}
           </div>
         )}
       </div>
